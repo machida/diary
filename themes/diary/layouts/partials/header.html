@@ -1,0 +1,13 @@
+{{ "<!-- partials/header.html start -->" | safeHTML }}
+
+<header class="l-header">
+  <div class="l-container">
+    <div class="l-header__inner">
+      {{- partial "b-logo.html" . -}}
+      <ul>
+        <li><a href="{{ relURL "/article/" }}">記事</a></li>
+        <li><a href="{{ relURL "/tags/" }}">タグ</a></li>
+      </ul>
+    </div><!-- .l-header__inner -->
+  </div><!-- .l-container -->
+</div><!-- .l-header -->

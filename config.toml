@@ -1,0 +1,36 @@
+baseURL = "http://example.org/"
+languageCode = "ja"
+title = "Diary"
+contentDir = "content"
+disableKinds = ["sitemap"]
+theme = "diary"
+paginate = 10
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+googleAnalytics = "UA-123-45"
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[taxonomies]
+tag = "tags"
+
+[params]
+env = "production"
+description = "ExampleSite description"
+keywords = ["Blog", "Portfolio", "PaperMod"]
+author = "@machida"
+images = ["<link or path of image for opengraph, twitter-cards>"]
+DateFormat = "January 2, 2006"
+
+[assets]
+favicon = "<link | abs url>"
+favicon16x16 = "<link | abs url>"
+favicon32x32 = "<link | abs url>"
+apple_touch_icon = "<link | abs url>"
+safari_pinned_tab = "<link | abs url>"

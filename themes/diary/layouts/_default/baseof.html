@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  {{- partial "head.html" . -}}
+  <body>
+    {{ "<!-- _default/baseof.html start -->" | safeHTML }}
+    <div class="l-wrapper">
+      <div class="l-wrapper__start">
+        {{- partial "header.html" . -}}
+        {{ block "main" . }}{{ end }}
+      </div><!-- .l-wrapper__start -->
+      <div class="l-wrapper__end">
+      </div><!-- .l-wrapper__end -->
+    </div><!-- .l-wrapper -->
+    {{ "<!-- _default/baseof.html end -->" | safeHTML }}
+  </body>
+</html>
