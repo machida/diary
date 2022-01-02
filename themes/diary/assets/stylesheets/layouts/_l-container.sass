@@ -1,8 +1,12 @@
+@use "../config/variables/index" as *
+@use "../config/mixins/margin-padding" as *
+@use "sass:map"
+
 .l-container
   +margin(horizontal, auto)
   +padding(horizontal, 1rem)
   width: 100%
-  max-width: map-get($container-max-widths, xxl)
+  max-width: map.get($container-max-widths, xxl)
   @each $size, $container-max-width in $container-max-widths
     &.is-#{$size}
         max-width: $container-max-width

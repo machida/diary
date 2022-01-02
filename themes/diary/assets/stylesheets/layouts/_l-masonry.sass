@@ -1,3 +1,7 @@
+@use "../config/functions/vertical-rhythm" as *
+@use "../config/mixins/break-points" as *
+@use "../config/mixins/masonry" as *
+
 .l-masonry
   +media-breakpoint-up(md)
     +masonry(3, vr(8))

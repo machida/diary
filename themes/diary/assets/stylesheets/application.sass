@@ -1,17 +1,6 @@
 @charset "UTF-8"
 
 ////////////
-// Built-In Modules
-////////////
-@use "sass:color"
-@use "sass:list"
-@use "sass:map"
-@use "sass:math"
-@use "sass:meta"
-@use "sass:selector"
-@use "sass:string"
-
-////////////
 // config
 ////////////
 @use "config" as *
@@ -25,14 +14,14 @@
 ////////////
 // Initializers
 ////////////
-@use "initializers/index"
+@use "initializers/index" as *
 
 ////////////
 // layouts
 ////////////
-@import "layouts/index"
+@use "layouts/index" as *
 
 ////////////
 // atoms
 ////////////
-@import "atoms/index"
+@use "atoms/index" as *
