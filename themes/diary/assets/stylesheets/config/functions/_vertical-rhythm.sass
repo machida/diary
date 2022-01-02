@@ -1,3 +1,8 @@
+////////////
+// Variables
+////////////
+@use "../variables/index" as *
+
 @function vr($line-count: 1, $bw: null, $vr: $vr)
   @if $bw
     @return calc(#{$line-count * $vr} - #{$bw})

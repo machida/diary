@@ -1,3 +1,9 @@
+@use "../variables/index" as *
+@use "../functions/list" as *
+@use "../functions/number" as *
+@use "../functions/text" as *
+@use "sass:list"
+
 =letter-spacing-center($space-width: null)
   letter-spacing: $space-width
   text-indent: $space-width * -1
@@ -74,10 +80,10 @@
           line-height: $lh-result
   @if ($value2)
     @for $i from 1 through length($value2)
-      +text-block-options(nth($value2, $i))
-      @if unit_number(nth($value2, $i))
+      +text-block-options(list.nth($value2, $i))
+      @if unit_number(list.nth($value2, $i))
         @if index($value2, center)
-          letter-spacing: nth($value2, $i)
-          text-indent: nth($value2, $i)
+          letter-spacing: list.nth($value2, $i)
+          text-indent: list.nth($value2, $i)
         @else
-          letter-spacing: nth($value2, $i)
+          letter-spacing: list.nth($value2, $i)

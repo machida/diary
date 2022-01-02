@@ -1,14 +1,31 @@
 @charset "UTF-8"
 
 ////////////
+// Built-In Modules
+////////////
+@use "sass:color"
+@use "sass:list"
+@use "sass:map"
+@use "sass:math"
+@use "sass:meta"
+@use "sass:selector"
+@use "sass:string"
+
+////////////
 // config
 ////////////
-@import "config"
+@use "config" as *
+
+/////////////
+// Mixins styles
+/////////////
+@use "config/mixins/text/index" as *
+@use "config/mixins/accessories/index" as *
 
 ////////////
 // Initializers
 ////////////
-@import "initializers/index"
+@use "initializers/index"
 
 ////////////
 // layouts
