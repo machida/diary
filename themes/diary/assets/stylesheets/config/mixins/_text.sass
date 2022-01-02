@@ -1,3 +1,5 @@
+@use "sass:math"
+
 @use "../variables/index" as *
 @use "../functions/list" as *
 @use "../functions/number" as *
@@ -37,8 +39,8 @@
     @if $margin-surplus == 0
       #{$margin-position}: $margin
     @else
-      $margin-rounded: $margin-surplus / $vr
-      @if $margin-rounded >= (1 / 2)
+      $margin-rounded: math.div($margin-surplus, $vr)
+      @if $margin-rounded >= (1 * 0.5)
         $margin-result: $fz * $margin-unitless + ($vr - $margin-surplus)
         #{$margin-position}: $margin-result
       @else
@@ -71,8 +73,8 @@
       @if $lh-surplus == 0
         line-height: $lh
       @else
-        $rounded: $lh-surplus / $vr
-        @if $rounded >= (1 / 2)
+        $rounded: math.div($lh-surplus, $vr)
+        @if $rounded >= (1 * 0.5)
           $lh-result: $fz * $lh + ($vr - $lh-surplus)
           line-height: $lh-result
         @else
