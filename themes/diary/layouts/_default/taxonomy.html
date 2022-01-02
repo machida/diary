@@ -1,13 +1,31 @@
 {{ define "title" }}
 {{- .Title -}}
 {{ end }}
+
 {{ define "main" }}
 {{ "<!-- _default/taxonomy.html start -->" | safeHTML }}
-{{ .Content }}
-<ul>
-{{ range .Pages -}}
-<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-{{ end -}}
-</ul>
+<main>
+  <nav class="l-articles">
+    <div class="l-container">
+      <div class="l-articles__inner">
+        <div class="l-articles__rows">
+
+          <div class="l-articles__row">
+            <header class="b-articles-header">
+              <h1 class="b-articles-header__title">
+                「{{ .Title }}」一覧
+              </h1>
+            </header><!-- .b-articles-header -->
+          </div><!-- .l-articles__row -->
+
+          <div class="l-articles__row">
+            {{- partial "b-articles.html" . -}}
+          </div><!-- .l-articles__row -->
+
+        </div><!-- .l-articles__rows -->
+      </div><!-- .l-articles__inner -->
+    </div><!-- .l-container -->
+  </nav><!-- .l-articles -->
+</main>
 {{ "<!-- _default/taxonomy.html end -->" | safeHTML }}
 {{ end }}

@@ -1,0 +1,18 @@
+<div class="b-articles">
+  <div class="b-articles__items">
+    {{ range .Site.RegularPages -}}
+    <div class="b-articles__item">
+      <div class="b-articles-article">
+        <a href="{{ .RelPermalink }}" class="b-articles-article__inner">
+          <time class="b-articles-article__published-date">
+            {{.Date.Format "2006年01月02日"}}
+          </time>
+          <h2 class="b-articles-article__title">
+            {{ .Title }}
+          </h2>
+        </a>
+      </div><!-- .b-articles-article -->
+    </div><!-- .b-articles__item -->
+    {{ end -}}
+  </div><!-- .b-articles__items -->
+</div><!-- .b-articles -->

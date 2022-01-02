@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
   {{- partial "head.html" . -}}
-  <body>
+  <body class="
+    {{- if (or (ne .Kind `page` ) (eq .Layout `archives`) (eq .Layout `search`)) -}}
+      {{- print "list" -}}
+    {{- else -}}
+      {{- print "single" -}}
+    {{- end -}}
+  " id="top">
     {{ "<!-- _default/baseof.html start -->" | safeHTML }}
     <div class="l-wrapper">
       <div class="l-wrapper__start">
@@ -9,6 +15,7 @@
         {{ block "main" . }}{{ end }}
       </div><!-- .l-wrapper__start -->
       <div class="l-wrapper__end">
+        {{- partial "footer.html" . -}}
       </div><!-- .l-wrapper__end -->
     </div><!-- .l-wrapper -->
     {{ "<!-- _default/baseof.html end -->" | safeHTML }}

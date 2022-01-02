@@ -1,13 +1,33 @@
 {{ define "title" }}
 {{- .Title -}}
 {{ end }}
+
 {{ define "main" }}
 {{ "<!-- _default/terms.html start -->" | safeHTML }}
-{{ .Content }}
-<ul>
-{{ range .Pages -}}
-<li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-{{ end -}}
-</ul>
+
+{{ if eq .Title "Tags"}}
+  <h2>Tags</h2>
+  {{ if .Content  }}
+    <div class="l-articles__row">
+      {{ .Content }}
+    </div><!-- .l-articles__row -->
+  {{ end }}
+  <ul>
+    {{ range .Site.Taxonomies.tags.ByCount }}
+      <li>
+        <a href="{{ "/tags/" | relURL }}{{ .Name | urlize }}">{{ .Name }}({{ .Count }})</a>
+      </li>
+    {{ end }}
+  </ul>
+{{ else if eq .Title "Categories"}}
+  <h2>Categories</h2>
+  <ul>
+    {{ range .Site.Taxonomies.categories.ByCount }}
+      <li>
+        <a href="{{ "/categories/" | relURL }}{{ .Name | urlize }}">{{ .Name }}({{ .Count }})</a>
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}
 {{ "<!-- _default/terms.html end -->" | safeHTML }}
 {{ end }}

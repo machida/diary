@@ -1,0 +1,14 @@
+<nav class="b-article-pager">
+  <ul class="b-article-pager__items">
+    {{ if .PrevInSection }}
+      <li class="b-article-pager__item is-previous">
+        <a href="{{ .PrevInSection.Permalink }}" data-toggle="tooltip" data-placement="top" title="{{ .PrevInSection.Title }}">&larr; {{ i18n "previousPost" }}</a>
+      </li><!-- .b-article-pager__item -->
+    {{ end }}
+    {{ if .NextInSection }}
+      <li class="b-article-pager__item is-next">
+        <a href="{{ .NextInSection.Permalink }}" data-toggle="tooltip" data-placement="top" title="{{ .NextInSection.Title }}">{{ i18n "nextPost" }} &rarr;</a>
+      </li><!-- .b-article-pager__item -->
+    {{ end }}
+  </ul><!-- .b-article-pager__items -->
+</nav><!-- .b-article-pager -->

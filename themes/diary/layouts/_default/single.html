@@ -4,11 +4,46 @@
 
 {{ define "main" }}
 {{ "<!-- _default/single.html start -->" | safeHTML }}
-<ul>
-{{ range .Params.tags -}}
-  <li><a href="{{ print "/tags/" . | relURL }}/">{{ . }}</a></li>
-{{ end -}}
-</ul>
-{{ .Content }}
+
+<main>
+  <article class="l-article">
+    <div class="l-container">
+      <div class="l-article__inner">
+        <div class="l-article__rows">
+            <div class="l-article__row">
+              <header class="b-article-header">
+                <time class="b-article-header__published-date">
+                  {{.Date.Format "2006年01月02日"}}
+                </time>
+                <h1 class="b-article-header__title">
+                  {{ .Title }}
+                </h1>
+              </header><!-- .b-article-header -->
+            </div><!-- .l-article__row -->
+
+            <div class="l-article__row">
+              <div class="b-article-body">
+                {{ .Content }}
+              </div><!-- .b-article-body -->
+            </div><!-- .l-article__row -->
+
+            {{ if .Params.tags }}
+              <div class="l-article__row">
+                {{- partial "b-article-tags.html" . -}}
+              </div><!-- .l-article__row -->
+            {{ end }}
+
+            {{ if ne .Type "page" }}
+              <div class="l-article__row">
+                {{- partial "b-article-pager.html" . -}}
+              </div><!-- .l-article__row -->
+            {{ end }}
+
+          </div><!-- .l-article__rows -->
+      </div><!-- .article__inner -->
+    </div><!-- .l-container -->
+  </article><!-- .article -->
+</main>
+
 {{ "<!-- _default/single.html end -->" | safeHTML }}
 {{ end }}

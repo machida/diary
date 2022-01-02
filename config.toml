@@ -1,6 +1,7 @@
 baseURL = "http://example.org/"
 languageCode = "ja"
 title = "Diary"
+hasCJKLanguage = true
 contentDir = "content"
 disableKinds = ["sitemap"]
 theme = "diary"
@@ -25,8 +26,9 @@ env = "production"
 description = "ExampleSite description"
 keywords = ["Blog", "Portfolio", "PaperMod"]
 author = "@machida"
-images = ["<link or path of image for opengraph, twitter-cards>"]
+images = ["images/"]
 DateFormat = "January 2, 2006"
+css = ["/stylesheets/application.css"]
 
 [assets]
 favicon = "<link | abs url>"

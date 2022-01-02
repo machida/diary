@@ -1,0 +1,9 @@
+<nav class="b-article-tags">
+  <ul class="b-article-tags__items">
+    {{ range .Params.tags }}
+      <li class="b-article-tags__item">
+        <a href="{{ $.Site.LanguagePrefix | absURL }}/tags/{{ . | urlize }}/">{{ . }}</a>&nbsp;
+      </li>
+    {{ end }}
+  </ul>
+</nav><!-- .b-article-tags -->
