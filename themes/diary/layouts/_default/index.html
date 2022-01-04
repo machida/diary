@@ -20,7 +20,11 @@
 
           {{ if .Content  }}
             <div class="l-articles__row">
-              {{ .Content }}
+              <article class="b-articles-description">
+                <div class="a-long-text is-md">
+                  {{ .Content }}
+                </div><!-- .a-long-text -->
+              </article><!-- .b-articles-description -->
             </div><!-- .l-articles__row -->
           {{ end }}
 
