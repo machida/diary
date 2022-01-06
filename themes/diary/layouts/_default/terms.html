@@ -5,29 +5,57 @@
 {{ define "main" }}
 {{ "<!-- _default/terms.html start -->" | safeHTML }}
 
-{{ if eq .Title "Tags"}}
-  <h2>Tags</h2>
-  {{ if .Content  }}
-    <div class="l-articles__row">
-      {{ .Content }}
-    </div><!-- .l-articles__row -->
-  {{ end }}
-  <ul>
-    {{ range .Site.Taxonomies.tags.ByCount }}
-      <li>
-        <a href="{{ "/tags/" | relURL }}{{ .Name | urlize }}">{{ .Name }}({{ .Count }})</a>
-      </li>
-    {{ end }}
-  </ul>
-{{ else if eq .Title "Categories"}}
-  <h2>Categories</h2>
-  <ul>
-    {{ range .Site.Taxonomies.categories.ByCount }}
-      <li>
-        <a href="{{ "/categories/" | relURL }}{{ .Name | urlize }}">{{ .Name }}({{ .Count }})</a>
-      </li>
-    {{ end }}
-  </ul>
-{{ end }}
+<main>
+  <nav class="l-terms">
+    <div class="l-container">
+      <div class="l-terms__inner">
+        <div class="l-terms__rows">
+          {{ if eq .Title "Tags"}}
+            <div class="l-terms__row">
+              <header class="b-terms-header">
+                <h1 class="b-terms-header__title">
+                  Tags
+                </h1>
+              </header><!-- .b-terms-header -->
+            </div><!-- .l-terms__row -->
+            {{ if .Content  }}
+              <div class="l-terms__row">
+                {{ .Content }}
+              </div><!-- .l-terms__row -->
+            {{ end }}
+            <div class="l-terms__row">
+              <ul>
+                {{ range .Site.Taxonomies.tags.ByCount }}
+                  <li>
+                    <a href="{{ "/tags/" | relURL }}{{ .Name | urlize }}">{{ .Name }}({{ .Count }})</a>
+                  </li>
+                {{ end }}
+              </ul>
+            </div><!-- .l-terms__row -->
+          {{ else if eq .Title "Categories"}}
+            <div class="l-terms__row">
+              <header class="b-terms-header">
+                <h1 class="b-terms-header__title">
+                  Categories
+                </h1>
+              </header><!-- .b-terms-header -->
+            </div><!-- .l-terms__row -->
+            <div class="l-terms__row">
+              <ul>
+                {{ range .Site.Taxonomies.categories.ByCount }}
+                  <li>
+                    <a href="{{ "/categories/" | relURL }}{{ .Name | urlize }}">{{ .Name }}({{ .Count }})</a>
+                  </li>
+                {{ end }}
+              </ul>
+            </div><!-- .l-terms__row -->
+          {{ end }}
+
+        </div><!-- .l-terms__rows -->
+      </div><!-- .l-terms__inner -->
+    </div><!-- .l-container -->
+  </nav><!-- .l-terms -->
+</main>
+
 {{ "<!-- _default/terms.html end -->" | safeHTML }}
 {{ end }}

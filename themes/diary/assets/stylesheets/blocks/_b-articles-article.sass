@@ -1,0 +1,13 @@
+@use "../config" as *
+
+.b-articles-article__inner
+  text-decoration: none
+  color: $default-text
+
+.b-articles-article__published-date
+  +text-block(fz(4) 1.4, 700)
+
+.b-articles-article__title
+  +text-block(fz(6) 1.4, 700)
+  &:not(:first-child)
+    margin-top: vr(1)

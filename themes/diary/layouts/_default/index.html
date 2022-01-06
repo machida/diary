@@ -13,18 +13,14 @@
           <div class="l-articles__row">
             <header class="b-articles-header">
               <h1 class="b-articles-header__title">
-                Articles
+                Index
               </h1>
             </header><!-- .b-articles-header -->
           </div><!-- .l-articles__row -->
 
           {{ if .Content  }}
             <div class="l-articles__row">
-              <article class="b-articles-description">
-                <div class="a-long-text is-md">
-                  {{ .Content }}
-                </div><!-- .a-long-text -->
-              </article><!-- .b-articles-description -->
+              {{- partial "b-articles-description.html" . -}}
             </div><!-- .l-articles__row -->
           {{ end }}
 
