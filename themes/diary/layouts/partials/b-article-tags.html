@@ -1,9 +1,16 @@
 <nav class="b-article-tags">
-  <ul class="b-article-tags__items">
-    {{ range .Params.tags }}
-      <li class="b-article-tags__item">
-        <a href="{{ $.Site.LanguagePrefix | absURL }}/tags/{{ . | urlize }}/">{{ . }}</a>
-      </li>
-    {{ end }}
-  </ul>
+  <dl class="b-article-tags__inner">
+    <dt class="b-article-tags__label">
+      Tags
+    </dt>
+    <dd class="b-article-tags__value">
+      <ul class="b-article-tags__items">
+        {{ range .Params.tags }}
+          <li class="b-article-tags__item">
+            <a href="{{ $.Site.LanguagePrefix | absURL }}/tags/{{ . | urlize }}/">{{ . }}</a>
+          </li>
+        {{ end }}
+        </ul>
+    </dd><!-- .b-article-tags__value -->
+  </dl><!-- .b-article-tags__inner -->
 </nav><!-- .b-article-tags -->

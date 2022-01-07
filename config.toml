@@ -17,6 +17,8 @@ googleAnalytics = "UA-123-45"
 [minify]
 disableXML = true
 minifyOutput = true
+disableHTML = false
+disableCSS = true
 
 [taxonomies]
 tag = "tags"

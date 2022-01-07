@@ -1,4 +1,14 @@
 @use "../config" as *
 
+.b-article-tags__inner
+  display: flex
+
+.b-article-tags__label
+  &::after
+    content: ':'
+
+.b-article-tags__value
+  flex: 1
+
 .b-article-tags__items
   display: flex

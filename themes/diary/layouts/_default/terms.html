@@ -13,7 +13,7 @@
           {{ if eq .Title "Tags"}}
             <div class="l-terms__row">
               <header class="b-terms-header">
-                <h1 class="b-terms-header__title">
+                <h1 class="a-page-title">
                   Tags
                 </h1>
               </header><!-- .b-terms-header -->
@@ -24,13 +24,17 @@
               </div><!-- .l-terms__row -->
             {{ end }}
             <div class="l-terms__row">
-              <ul>
-                {{ range .Site.Taxonomies.tags.ByCount }}
-                  <li>
-                    <a href="{{ "/tags/" | relURL }}{{ .Name | urlize }}">{{ .Name }}({{ .Count }})</a>
-                  </li>
-                {{ end }}
-              </ul>
+              <div class="b-terms">
+                <ul class="b-terms__items">
+                  {{ range .Site.Taxonomies.tags.ByCount }}
+                    <li class="b-terms__item">
+                      <a href="{{ "/tags/" | relURL }}{{ .Name | urlize }}" class="b-terms__item-link">
+                        {{ .Name }}({{ .Count }})
+                      </a>
+                    </li><!-- .b-terms__item -->
+                  {{ end }}
+                </ul><!-- .b-terms__items -->
+              </div><!-- .b-terms -->
             </div><!-- .l-terms__row -->
           {{ else if eq .Title "Categories"}}
             <div class="l-terms__row">
@@ -41,13 +45,17 @@
               </header><!-- .b-terms-header -->
             </div><!-- .l-terms__row -->
             <div class="l-terms__row">
-              <ul>
-                {{ range .Site.Taxonomies.categories.ByCount }}
-                  <li>
-                    <a href="{{ "/categories/" | relURL }}{{ .Name | urlize }}">{{ .Name }}({{ .Count }})</a>
-                  </li>
-                {{ end }}
-              </ul>
+              <div class="b-terms">
+                <ul class="b-terms__items">
+                  {{ range .Site.Taxonomies.categories.ByCount }}
+                    <li class="b-terms__item">
+                      <a href="{{ "/categories/" | relURL }}{{ .Name | urlize }}" class="b-terms__item-link">
+                        {{ .Name }}({{ .Count }})
+                      </a>
+                    </li><!-- .b-terms__item -->
+                  {{ end }}
+                </ul><!-- .b-terms__items -->
+              </div><!-- .b-terms -->
             </div><!-- .l-terms__row -->
           {{ end }}
 
