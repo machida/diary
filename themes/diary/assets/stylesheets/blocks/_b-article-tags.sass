@@ -4,11 +4,16 @@
   display: flex
 
 .b-article-tags__label
+  display: flex
   &::after
     content: ':'
+    +margin(horizontal, .25em)
 
 .b-article-tags__value
   flex: 1
 
 .b-article-tags__items
   display: flex
+
+.b-article-tags__item
+  +padding(horizontal, .125em)

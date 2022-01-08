@@ -5208,8 +5208,13 @@ a:hover .a-short-text.is-md img {
   display: flex;
 }
 
+.b-article-tags__label {
+  display: flex;
+}
 .b-article-tags__label::after {
   content: ":";
+  margin-left: 0.25em;
+  margin-right: 0.25em;
 }
 
 .b-article-tags__value {
@@ -5218,6 +5223,11 @@ a:hover .a-short-text.is-md img {
 
 .b-article-tags__items {
   display: flex;
+}
+
+.b-article-tags__item {
+  padding-left: 0.125em;
+  padding-right: 0.125em;
 }
 
 .b-article-pager__items {
