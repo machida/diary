@@ -2,3 +2,10 @@
 
 .b-terms__items
   display: flex
+
+.b-terms__item
+  +padding(horizontal, .125em)
+  display: flex
+  &:not(:last-child)::after
+    content: '、'
+    margin-left: .25em

@@ -17,3 +17,7 @@
 
 .b-article-tags__item
   +padding(horizontal, .125em)
+  display: flex
+  &:not(:last-child)::after
+    content: '、'
+    margin-left: .25em

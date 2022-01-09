@@ -1,9 +1,13 @@
 @use "../config" as *
 
 .b-copyright
+  display: flex
+
+.b-copyright__item
   +text-block(fz(3) 1.4, flex)
   align-items: center
+  +padding(horizontal, .25em)
 
 .b-copyright__icon
   fill: $default-text
-  +size(1em)
+  +size(.75em)

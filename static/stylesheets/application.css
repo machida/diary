@@ -417,6 +417,10 @@ textarea:-ms-input-placeholder {
   font-weight: 100;
 }
 
+a {
+  color: #2d2e48;
+}
+
 .a-badge {
   text-align: center;
   text-transform: none;
@@ -3260,6 +3264,10 @@ a:hover .a-short-text.is-md img {
   margin-top: 0.5rem;
 }
 
+.a-yakuhan {
+  font-family: YakuHanJP_Noto, "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
 .l-wrapper {
   min-height: 100vh;
   display: flex;
@@ -5228,6 +5236,11 @@ a:hover .a-short-text.is-md img {
 .b-article-tags__item {
   padding-left: 0.125em;
   padding-right: 0.125em;
+  display: flex;
+}
+.b-article-tags__item:not(:last-child)::after {
+  content: "、";
+  margin-left: 0.25em;
 }
 
 .b-article-pager__items {
@@ -5239,17 +5252,33 @@ a:hover .a-short-text.is-md img {
   display: flex;
 }
 
+.b-terms__item {
+  padding-left: 0.125em;
+  padding-right: 0.125em;
+  display: flex;
+}
+.b-terms__item:not(:last-child)::after {
+  content: "、";
+  margin-left: 0.25em;
+}
+
 .b-copyright {
+  display: flex;
+}
+
+.b-copyright__item {
   font-size: 1rem;
   line-height: 1.5rem;
   display: flex;
   align-items: center;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
 }
 
 .b-copyright__icon {
   fill: #2d2e48;
-  height: 1em;
-  width: 1em;
+  height: 0.75em;
+  width: 0.75em;
 }
 
 /*# sourceMappingURL=application.css.map */
