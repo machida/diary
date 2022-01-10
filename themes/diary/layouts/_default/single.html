@@ -11,16 +11,8 @@
       <div class="l-article__inner">
         <div class="l-article__rows">
             <div class="l-article__row">
-              <header class="b-article-header">
-                <time class="b-article-header__published-date">
-                  {{.Date.Format "2006年01月02日"}}
-                </time>
-                <h1 class="b-article-header__title a-yakuhan">
-                  {{ .Title }}
-                </h1>
-              </header><!-- .b-article-header -->
+              {{- partial "b-article-header.html" . -}}
             </div><!-- .l-article__row -->
-
             <div class="l-article__row">
               <div class="b-article-body">
                 <div class="a-long-text is-lg">
@@ -34,6 +26,10 @@
                 {{- partial "b-article-tags.html" . -}}
               </div><!-- .l-article__row -->
             {{ end }}
+
+            <div class="l-article__row">
+              <hr class="b-article-hr">
+            </div><!-- .l-article__row -->
 
             {{ if ne .Type "page" }}
               <div class="l-article__row">

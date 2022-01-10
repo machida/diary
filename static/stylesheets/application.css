@@ -5240,12 +5240,29 @@ a:hover .a-short-text.is-md img {
 }
 .b-article-tags__item:not(:last-child)::after {
   content: "、";
-  margin-left: 0.25em;
+  margin-left: 0.125em;
 }
 
 .b-article-pager__items {
   display: flex;
   justify-content: space-between;
+}
+
+.b-article-pager__item-link {
+  display: flex;
+  align-items: center;
+}
+
+.b-article-pager__item-icon {
+  height: 0.875em;
+  width: 0.875em;
+}
+.is-prev .b-article-pager__item-icon {
+  margin-right: 0.5em;
+  transform: rotate(180deg);
+}
+.is-next .b-article-pager__item-icon {
+  margin-left: 0.25em;
 }
 
 .b-terms__items {
@@ -5264,11 +5281,12 @@ a:hover .a-short-text.is-md img {
 
 .b-copyright {
   display: flex;
+  justify-content: center;
 }
 
 .b-copyright__item {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.8888888889rem;
+  line-height: 1.25rem;
   display: flex;
   align-items: center;
   padding-left: 0.25em;

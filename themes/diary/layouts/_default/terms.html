@@ -24,17 +24,7 @@
               </div><!-- .l-terms__row -->
             {{ end }}
             <div class="l-terms__row">
-              <div class="b-terms">
-                <ul class="b-terms__items">
-                  {{ range .Site.Taxonomies.tags.ByCount }}
-                    <li class="b-terms__item">
-                      <a href="{{ "/tags/" | relURL }}{{ .Name | urlize }}" class="b-terms__item-link">
-                        {{ .Name }}({{ .Count }})
-                      </a>
-                    </li><!-- .b-terms__item -->
-                  {{ end }}
-                </ul><!-- .b-terms__items -->
-              </div><!-- .b-terms -->
+              {{- partial "b-terms-tags.html" . -}}
             </div><!-- .l-terms__row -->
           {{ else if eq .Title "Categories"}}
             <div class="l-terms__row">
@@ -45,17 +35,7 @@
               </header><!-- .b-terms-header -->
             </div><!-- .l-terms__row -->
             <div class="l-terms__row">
-              <div class="b-terms">
-                <ul class="b-terms__items">
-                  {{ range .Site.Taxonomies.categories.ByCount }}
-                    <li class="b-terms__item">
-                      <a href="{{ "/categories/" | relURL }}{{ .Name | urlize }}" class="b-terms__item-link">
-                        {{ .Name }}({{ .Count }})
-                      </a>
-                    </li><!-- .b-terms__item -->
-                  {{ end }}
-                </ul><!-- .b-terms__items -->
-              </div><!-- .b-terms -->
+              {{- partial "b-terms-categories.html" . -}}
             </div><!-- .l-terms__row -->
           {{ end }}
 
