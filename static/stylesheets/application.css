@@ -5265,6 +5265,10 @@ a:hover .a-short-text.is-md img {
   margin-left: 0.25em;
 }
 
+.b-article-hr {
+  border-top: dashed 1px #e0e0e0;
+}
+
 .b-terms__items {
   display: flex;
 }
