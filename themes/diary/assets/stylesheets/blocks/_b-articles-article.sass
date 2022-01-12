@@ -5,9 +5,19 @@
   color: $default-text
 
 .b-articles-article__published-date
-  +text-block(fz(4) 1.4, 700)
+  font-weight: 700
+  +media-breakpoint-up(md)
+    +text-block(fz(4) 1.4)
+  +media-breakpoint-down(sm)
+    +text-block(fz(2) 1.4)
 
 .b-articles-article__title
-  +text-block(fz(6) 1.4, 700)
-  &:not(:first-child)
-    margin-top: vr(1)
+  font-weight: 700
+  +media-breakpoint-up(md)
+    +text-block(fz(6) 1.4)
+    &:not(:first-child)
+      margin-top: vr(1)
+  +media-breakpoint-down(sm)
+    +text-block(fz(5) 1.4)
+    &:not(:first-child)
+      margin-top: vr(1)

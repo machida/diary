@@ -1,4 +1,7 @@
 @use "../config" as *
 
 .l-footer
-  +padding(vertical, vr(15))
+  +media-breakpoint-up(md)
+    +padding(vertical, vr(15))
+  +media-breakpoint-down(sm)
+    +padding(vertical, vr(10))

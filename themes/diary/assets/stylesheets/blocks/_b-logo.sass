@@ -4,4 +4,9 @@
   text-decoration: none
 
 .b-logo__type
-  +text-block(fz(7) 1.4, 700 $default-text)
+  color: $default-text
+  font-weight: 700
+  +media-breakpoint-up(md)
+    +text-block(fz(7) 1.4,)
+  +media-breakpoint-down(sm)
+    +text-block(fz(6) 1.4,)

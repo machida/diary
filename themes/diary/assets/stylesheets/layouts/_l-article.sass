@@ -2,4 +2,7 @@
 
 .l-article__row
   &:not(:first-child)
-    margin-top: vr(10)
+    +media-breakpoint-up(md)
+      margin-top: vr(10)
+    +media-breakpoint-down(sm)
+      margin-top: vr(8)

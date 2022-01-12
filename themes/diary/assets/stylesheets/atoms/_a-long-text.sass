@@ -3,6 +3,11 @@
 
 .a-long-text
   +long-text-style(md)
+  &.is-lg
+    +media-breakpoint-up(md)
+      +long-text-style(md)
+    +media-breakpoint-down(sm)
+      +long-text-style(sm)
   &.is-sm
     +long-text-style(sm)
   &.is-md
