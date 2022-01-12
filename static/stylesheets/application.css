@@ -389,7 +389,7 @@ input[type=file] {
 }
 
 body {
-  font-family: YakuHanJPs_Narrow, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-family: YakuHanJPs_Narrow, "Noto Sans JP", sans-serif;
   color: #2d2e48;
 }
 body.is-ie11 {
@@ -5811,6 +5811,7 @@ a:hover .a-short-text.is-md img {
 
 .b-articles-article__title {
   font-weight: 700;
+  transition: all 0.2s ease-out;
 }
 @media (min-width: 48em) {
   .b-articles-article__title {
@@ -5829,6 +5830,9 @@ a:hover .a-short-text.is-md img {
   .b-articles-article__title:not(:first-child) {
     margin-top: 0.25rem;
   }
+}
+.b-articles-article__inner:hover .b-articles-article__title {
+  text-decoration: underline;
 }
 
 @media (min-width: 48em) {

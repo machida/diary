@@ -13,6 +13,7 @@
 
 .b-articles-article__title
   font-weight: 700
+  transition: all .2s ease-out
   +media-breakpoint-up(md)
     +text-block(fz(6) 1.4)
     &:not(:first-child)
@@ -21,3 +22,5 @@
     +text-block(fz(5) 1.4)
     &:not(:first-child)
       margin-top: vr(1)
+  .b-articles-article__inner:hover &
+    text-decoration: underline

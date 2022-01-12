@@ -64,7 +64,12 @@
     {{- template "partials/schema_json.html" . }}
   {{- end -}}
 
+  {{- /* fonts */}}
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp-noto.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
   {{ range .Site.Params.css }}
     <link rel="stylesheet" href="{{ . | absURL}}">
   {{ end }}
