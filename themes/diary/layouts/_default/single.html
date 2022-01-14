@@ -5,43 +5,37 @@
 {{ define "main" }}
 {{ "<!-- _default/single.html start -->" | safeHTML }}
 
-<main>
-  <article class="l-article">
-    <div class="l-container">
-      <div class="l-article__inner">
-        <div class="l-article__rows">
+<article class="l-article a-full-height-container">
+  <div class="l-container a-full-height-container">
+    <div class="l-article__inner a-full-height-container">
+      <div class="l-article__rows a-full-height-container">
+          <div class="l-article__row">
+            {{- partial "b-article-header.html" . -}}
+          </div><!-- .l-article__row -->
+          <div class="l-article__row a-full-height">
+            {{- partial "b-article-body.html" . -}}
+          </div><!-- .l-article__row -->
+
+          {{ if .Params.tags }}
             <div class="l-article__row">
-              {{- partial "b-article-header.html" . -}}
+              {{- partial "b-article-tags.html" . -}}
             </div><!-- .l-article__row -->
+          {{ end }}
+
+          <div class="l-article__row">
+            <hr class="b-article-hr">
+          </div><!-- .l-article__row -->
+
+          {{ if ne .Type "page" }}
             <div class="l-article__row">
-              <div class="b-article-body">
-                <div class="a-long-text is-lg">
-                  {{ .Content }}
-                </div><!-- .a-long-text -->
-              </div><!-- .b-article-body -->
+              {{- partial "b-article-pager.html" . -}}
             </div><!-- .l-article__row -->
+          {{ end }}
 
-            {{ if .Params.tags }}
-              <div class="l-article__row">
-                {{- partial "b-article-tags.html" . -}}
-              </div><!-- .l-article__row -->
-            {{ end }}
-
-            <div class="l-article__row">
-              <hr class="b-article-hr">
-            </div><!-- .l-article__row -->
-
-            {{ if ne .Type "page" }}
-              <div class="l-article__row">
-                {{- partial "b-article-pager.html" . -}}
-              </div><!-- .l-article__row -->
-            {{ end }}
-
-          </div><!-- .l-article__rows -->
-      </div><!-- .article__inner -->
-    </div><!-- .l-container -->
-  </article><!-- .article -->
-</main>
+        </div><!-- .l-article__rows -->
+    </div><!-- .article__inner -->
+  </div><!-- .l-container -->
+</article><!-- .article -->
 
 {{ "<!-- _default/single.html end -->" | safeHTML }}
 {{ end }}

@@ -5,45 +5,43 @@
 {{ define "main" }}
 {{ "<!-- _default/terms.html start -->" | safeHTML }}
 
-<main>
-  <nav class="l-terms">
-    <div class="l-container">
-      <div class="l-terms__inner">
-        <div class="l-terms__rows">
-          {{ if eq .Title "Tags"}}
+<nav class="l-terms">
+  <div class="l-container">
+    <div class="l-terms__inner">
+      <div class="l-terms__rows">
+        {{ if eq .Title "Tags"}}
+          <div class="l-terms__row">
+            <header class="b-terms-header">
+              <h1 class="a-page-title">
+                Tags
+              </h1>
+            </header><!-- .b-terms-header -->
+          </div><!-- .l-terms__row -->
+          {{ if .Content  }}
             <div class="l-terms__row">
-              <header class="b-terms-header">
-                <h1 class="a-page-title">
-                  Tags
-                </h1>
-              </header><!-- .b-terms-header -->
-            </div><!-- .l-terms__row -->
-            {{ if .Content  }}
-              <div class="l-terms__row">
-                {{ .Content }}
-              </div><!-- .l-terms__row -->
-            {{ end }}
-            <div class="l-terms__row">
-              {{- partial "b-terms-tags.html" . -}}
-            </div><!-- .l-terms__row -->
-          {{ else if eq .Title "Categories"}}
-            <div class="l-terms__row">
-              <header class="b-terms-header">
-                <h1 class="b-terms-header__title">
-                  Categories
-                </h1>
-              </header><!-- .b-terms-header -->
-            </div><!-- .l-terms__row -->
-            <div class="l-terms__row">
-              {{- partial "b-terms-categories.html" . -}}
+              {{ .Content }}
             </div><!-- .l-terms__row -->
           {{ end }}
+          <div class="l-terms__row">
+            {{- partial "b-terms-tags.html" . -}}
+          </div><!-- .l-terms__row -->
+        {{ else if eq .Title "Categories"}}
+          <div class="l-terms__row">
+            <header class="b-terms-header">
+              <h1 class="b-terms-header__title">
+                Categories
+              </h1>
+            </header><!-- .b-terms-header -->
+          </div><!-- .l-terms__row -->
+          <div class="l-terms__row">
+            {{- partial "b-terms-categories.html" . -}}
+          </div><!-- .l-terms__row -->
+        {{ end }}
 
-        </div><!-- .l-terms__rows -->
-      </div><!-- .l-terms__inner -->
-    </div><!-- .l-container -->
-  </nav><!-- .l-terms -->
-</main>
+      </div><!-- .l-terms__rows -->
+    </div><!-- .l-terms__inner -->
+  </div><!-- .l-container -->
+</nav><!-- .l-terms -->
 
 {{ "<!-- _default/terms.html end -->" | safeHTML }}
 {{ end }}

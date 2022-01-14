@@ -9,11 +9,13 @@
     {{- end -}}
   " id="top">
     {{ "<!-- _default/baseof.html start -->" | safeHTML }}
-    <div class="l-wrapper">
-      <div class="l-wrapper__start">
+    <div class="l-wrapper a-full-height-container">
+      <div class="l-wrapper__start a-full-height-container">
         {{- partial "header.html" . -}}
-        {{ block "main" . }}
-        {{ end }}
+        <main class="l-main a-full-height-container">
+          {{ block "main" . }}
+          {{ end }}
+        </main><!-- .l-main -->
       </div><!-- .l-wrapper__start -->
       <div class="l-wrapper__end">
         {{- partial "footer.html" . -}}

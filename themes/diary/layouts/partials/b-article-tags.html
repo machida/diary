@@ -7,7 +7,7 @@
       <ul class="b-article-tags__items">
         {{ range .Params.tags }}
           <li class="b-article-tags__item">
-            <a href="{{ $.Site.LanguagePrefix | absURL }}/tags/{{ . | urlize }}/">{{ . }}</a>
+            <a href="{{ $.Site.LanguagePrefix | absURL }}/tags/{{ . | urlize }}/" class="b-article-tags__item-link">{{ . }}</a>
           </li>
         {{ end }}
         </ul>

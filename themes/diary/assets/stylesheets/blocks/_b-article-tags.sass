@@ -1,5 +1,8 @@
 @use "../config" as *
 
+.b-article-tags
+  +text-block(fz(2) 1.4)
+
 .b-article-tags__inner
   display: flex
 
@@ -20,4 +23,9 @@
   display: flex
   &:not(:last-child)::after
     content: '、'
-    margin-left: .125em
+    margin-left: .25em
+
+.b-article-tags__item-link
+  +hover-link
+  &::before
+    content: '#'

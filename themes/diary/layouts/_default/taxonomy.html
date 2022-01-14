@@ -4,28 +4,26 @@
 
 {{ define "main" }}
 {{ "<!-- _default/taxonomy.html start -->" | safeHTML }}
-<main>
-  <nav class="l-articles">
-    <div class="l-container">
-      <div class="l-articles__inner">
-        <div class="l-articles__rows">
+<nav class="l-articles">
+  <div class="l-container">
+    <div class="l-articles__inner">
+      <div class="l-articles__rows">
 
-          <div class="l-articles__row">
-            <header class="b-articles-header">
-              <h1 class="a-page-title">
-                {{ .Title }}
-              </h1>
-            </header><!-- .b-articles-header -->
-          </div><!-- .l-articles__row -->
+        <div class="l-articles__row">
+          <header class="b-articles-header">
+            <h1 class="a-page-title">
+              {{ .Title }}
+            </h1>
+          </header><!-- .b-articles-header -->
+        </div><!-- .l-articles__row -->
 
-          <div class="l-articles__row">
-            {{- partial "b-articles.html" . -}}
-          </div><!-- .l-articles__row -->
+        <div class="l-articles__row">
+          {{- partial "b-articles.html" . -}}
+        </div><!-- .l-articles__row -->
 
-        </div><!-- .l-articles__rows -->
-      </div><!-- .l-articles__inner -->
-    </div><!-- .l-container -->
-  </nav><!-- .l-articles -->
-</main>
+      </div><!-- .l-articles__rows -->
+    </div><!-- .l-articles__inner -->
+  </div><!-- .l-container -->
+</nav><!-- .l-articles -->
 {{ "<!-- _default/taxonomy.html end -->" | safeHTML }}
 {{ end }}

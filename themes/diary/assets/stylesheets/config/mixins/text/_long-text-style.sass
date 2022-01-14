@@ -64,14 +64,21 @@ $long-text-sm-font-sizes: (xs: fz(1), sm: fz(2), md: fz(3), h6: fz(3), h5: fz(3)
     +margin(horizontal, .25em)
     border-radius: .125rem
   pre code
-    border: solid 1px $border
     overflow: auto
     display: block
     width: 100%
-    padding: .875em
+    padding: .5em .75em
   pre
+    border-radius: 4px
     padding: 0
-    +text-block(map-get($font-sizes, sm) 1.5 1.25em)
+    +text-block(map-get($font-sizes, xs) 1.5 1.25em)
+  table pre
+    margin: 0
+  table td pre code
+    padding: 0
+  .highlight > div
+    padding: .25em 0
+    border: solid 1px #ddd
 
   ////////////////
   // hr
@@ -174,6 +181,9 @@ $long-text-sm-font-sizes: (xs: fz(1), sm: fz(2), md: fz(3), h6: fz(3), h5: fz(3)
   ////////////////
   //  iframe
   ////////////////
+  div
+    +text-block(map-get($font-sizes, md) 1.7 1.5em 1.5em)
+
   iframe
     display: block
     max-width: 100%
