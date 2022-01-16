@@ -21,6 +21,9 @@ $long-text-sm-font-sizes: (xs: fz(1), sm: fz(2), md: fz(3), h6: fz(3), h5: fz(3)
   >*:last-child
     margin-bottom: 0
 
+  div
+    +text-block(map-get($font-sizes, md) 1.8 1.5em 1.5em)
+
   ////////////////
   // headding
   ////////////////
@@ -58,7 +61,7 @@ $long-text-sm-font-sizes: (xs: fz(1), sm: fz(2), md: fz(3), h6: fz(3), h5: fz(3)
     hyphens: none
   p code,
   li code
-    +text-block(map-get($font-sizes, sm) 1.7, $default-text)
+    +text-block(map-get($font-sizes, sm) 1.8, $default-text)
     align-items: center
     letter-spacing: 0
     padding: .125em .25em
@@ -180,18 +183,5 @@ $long-text-sm-font-sizes: (xs: fz(1), sm: fz(2), md: fz(3), h6: fz(3), h5: fz(3)
   iframe
     display: block
     max-width: 100%
-    +text-block(map-get($font-sizes, md) 1.7 1.5em 1.5em)
+    +text-block(map-get($font-sizes, md) 1.8 1.5em 1.5em)
     +margin(horizontal, auto)
-
-  ////////////////
-  //  Hugo
-  ////////////////
-  div
-    +text-block(map-get($font-sizes, md) 1.7 1.5em 1.5em)
-  table pre
-    margin: 0
-  table td pre code
-    padding: 0
-  .highlight > div
-    padding: .25em 0
-    border: solid 1px #ddd
