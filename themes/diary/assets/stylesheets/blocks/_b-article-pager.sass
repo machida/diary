@@ -3,11 +3,15 @@
 .b-article-pager__items
   display: flex
   justify-content: space-between
+  +text-block(fz(2) 1.4)
 
 .b-article-pager__item-link
   display: flex
   align-items: center
   +hover-link
+  transition: color .2s ease-out
+  &:hover
+    color: #ff00a5
 
 .b-article-pager__item-icon
   +size(.75em)
@@ -15,4 +19,4 @@
     margin-right: .5em
     transform: rotate(180deg)
   .is-next &
-    margin-left: .25em
+    margin-left: .5em

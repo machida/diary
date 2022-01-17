@@ -1326,7 +1326,7 @@ input:checked + .a-form-radio__label::before {
     text-decoration: none;
   }
   .a-long-text.is-lg a:hover {
-    color: #1b23eb;
+    color: #ff00a5;
   }
   .a-long-text.is-lg code {
     tab-size: 2;
@@ -1596,7 +1596,7 @@ input:checked + .a-form-radio__label::before {
     text-decoration: none;
   }
   .a-long-text.is-lg a:hover {
-    color: #1b23eb;
+    color: #ff00a5;
   }
   .a-long-text.is-lg code {
     tab-size: 2;
@@ -1865,7 +1865,7 @@ input:checked + .a-form-radio__label::before {
   text-decoration: none;
 }
 .a-long-text.is-sm a:hover {
-  color: #1b23eb;
+  color: #ff00a5;
 }
 .a-long-text.is-sm code {
   tab-size: 2;
@@ -2134,7 +2134,7 @@ a:hover .a-long-text.is-sm img {
     text-decoration: none;
   }
   .a-long-text.is-md a:hover {
-    color: #1b23eb;
+    color: #ff00a5;
   }
   .a-long-text.is-md code {
     tab-size: 2;
@@ -2404,7 +2404,7 @@ a:hover .a-long-text.is-sm img {
     text-decoration: none;
   }
   .a-long-text.is-md a:hover {
-    color: #1b23eb;
+    color: #ff00a5;
   }
   .a-long-text.is-md code {
     tab-size: 2;
@@ -5085,6 +5085,7 @@ p .a-short-text.is-md a {
   color: #2d2e48;
   font-weight: 700;
   display: inline-block;
+  transition: color 0.2s ease-out;
 }
 @media (min-width: 48em) {
   .b-logo__type {
@@ -5097,6 +5098,9 @@ p .a-short-text.is-md a {
     font-size: 1.6rem;
     line-height: 2.25rem;
   }
+}
+.b-logo__link:hover .b-logo__type {
+  color: #ff00a5;
 }
 
 @media (min-width: 48em) {
@@ -5155,6 +5159,7 @@ p .a-short-text.is-md a {
 }
 .b-articles-article__inner:hover .b-articles-article__title {
   text-decoration: underline;
+  color: #ff00a5;
 }
 
 @media (min-width: 48em) {
@@ -5192,6 +5197,14 @@ p .a-short-text.is-md a {
     margin-right: -2.5rem;
     max-width: calc(100% + 5rem);
   }
+}
+.b-article-body .a-long-text.is-lg h1,
+.b-article-body .a-long-text.is-lg h2,
+.b-article-body .a-long-text.is-lg h3,
+.b-article-body .a-long-text.is-lg h4,
+.b-article-body .a-long-text.is-lg h5,
+.b-article-body .a-long-text.is-lg h6 {
+  font-family: YakuHanJP_Noto, "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 .b-article-tags {
@@ -5233,6 +5246,7 @@ p .a-short-text.is-md a {
 .b-article-tags__item-link {
   text-decoration: none;
   cursor: pointer;
+  transition: color 0.2s ease-out;
 }
 .b-article-tags__item-link:hover, .b-article-tags__item-link:active {
   text-decoration: underline;
@@ -5240,10 +5254,15 @@ p .a-short-text.is-md a {
 .b-article-tags__item-link::before {
   content: "#";
 }
+.b-article-tags__item-link:hover {
+  color: #ff00a5;
+}
 
 .b-article-pager__items {
   display: flex;
   justify-content: space-between;
+  font-size: 0.8888888889rem;
+  line-height: 1.25rem;
 }
 
 .b-article-pager__item-link {
@@ -5251,9 +5270,13 @@ p .a-short-text.is-md a {
   align-items: center;
   text-decoration: none;
   cursor: pointer;
+  transition: color 0.2s ease-out;
 }
 .b-article-pager__item-link:hover, .b-article-pager__item-link:active {
   text-decoration: underline;
+}
+.b-article-pager__item-link:hover {
+  color: #ff00a5;
 }
 
 .b-article-pager__item-icon {
@@ -5265,7 +5288,7 @@ p .a-short-text.is-md a {
   transform: rotate(180deg);
 }
 .is-next .b-article-pager__item-icon {
-  margin-left: 0.25em;
+  margin-left: 0.5em;
 }
 
 .b-article-hr {
