@@ -4,7 +4,7 @@
 .l-container
   +margin(horizontal, auto)
   width: 100%
-  max-width: map.get($container-max-widths, md)
+  max-width: map.get($container-max-widths, lg)
   @each $size, $container-max-width in $container-max-widths
     &.is-#{$size}
       max-width: $container-max-width

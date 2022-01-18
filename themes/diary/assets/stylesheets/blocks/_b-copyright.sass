@@ -5,9 +5,13 @@
   justify-content: center
 
 .b-copyright__item
-  +text-block(fz(2) 1.4, flex)
+  display: flex
   align-items: center
   +padding(horizontal, .125em)
+  +media-breakpoint-up(md)
+    +text-block(fz(3) 1.5)
+  +media-breakpoint-down(sm)
+    +text-block(fz(2) 1.5)
 
 .b-copyright__icon
   fill: $default-text
