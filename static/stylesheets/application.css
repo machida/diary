@@ -1806,6 +1806,546 @@ a:hover .a-long-text.is-sm img {
     margin-right: auto;
   }
 }
+@media (min-width: 48em) {
+  .a-long-text.is-dialy > *:first-child {
+    margin-top: 0;
+  }
+  .a-long-text.is-dialy > *:last-child {
+    margin-bottom: 0;
+  }
+  .a-long-text.is-dialy div {
+    font-size: 1.3333333333rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    line-height: 2.5rem;
+  }
+  .a-long-text.is-dialy h1 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+  }
+  .a-long-text.is-dialy h2 {
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    line-height: 2.75rem;
+    font-weight: 700;
+    padding-bottom: calc(0.75rem - 1px);
+    border-bottom: solid 1px #e0e0e0;
+  }
+  .a-long-text.is-dialy h3 {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+  }
+  .a-long-text.is-dialy h4 {
+    font-size: 1.3333333333rem;
+    margin-top: 1.75rem;
+    line-height: 2rem;
+    font-weight: 600;
+  }
+  .a-long-text.is-dialy h5 {
+    font-size: 1.3333333333rem;
+    margin-top: 1.75rem;
+    line-height: 2rem;
+    font-weight: 600;
+  }
+  .a-long-text.is-dialy h6 {
+    font-size: 1.3333333333rem;
+    margin-top: 1.75rem;
+    line-height: 2rem;
+    font-weight: 600;
+  }
+  .a-long-text.is-dialy p {
+    font-size: 1.3333333333rem;
+    margin-top: 1.75rem;
+    line-height: 2.5rem;
+  }
+  .a-long-text.is-dialy a {
+    word-break: break-all;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.2s ease-out;
+  }
+  .a-long-text.is-dialy a:hover, .a-long-text.is-dialy a:active {
+    text-decoration: none;
+  }
+  .a-long-text.is-dialy a:hover {
+    color: #ff00a5;
+  }
+  .a-long-text.is-dialy code {
+    tab-size: 2;
+    hyphens: none;
+  }
+  .a-long-text.is-dialy p code,
+.a-long-text.is-dialy li code {
+    font-size: 1.1428571429rem;
+    line-height: 1.25rem;
+    color: #2d2e48;
+    align-items: center;
+    letter-spacing: 0;
+    padding: 0.25em 0.25em;
+    border: solid 1px #e0e0e0;
+    background-color: #eaeaed;
+    margin-left: 0.125em;
+    margin-right: 0.125em;
+    border-radius: 0.125rem;
+  }
+  .a-long-text.is-dialy pre code {
+    overflow: auto;
+    display: block;
+    width: 100%;
+    padding: 0.5em 0.75em;
+  }
+  .a-long-text.is-dialy pre {
+    border-radius: 4px;
+    padding: 0;
+    font-size: 1rem;
+    margin-top: 1.25rem;
+    line-height: 1.5rem;
+  }
+  .a-long-text.is-dialy hr {
+    font-size: 1.3333333333rem;
+    margin-top: 2.75rem;
+    margin-bottom: 2.75rem;
+    line-height: 1.25rem;
+    display: block;
+    height: 0.5rem;
+    background-color: #e0e0e0;
+  }
+  .a-long-text.is-dialy img {
+    font-size: 1.3333333333rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1.25rem;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid transparent;
+  }
+  a:hover .a-long-text.is-dialy img {
+    border-color: #b3b3b3;
+  }
+  .a-long-text.is-dialy ol {
+    list-style-type: decimal;
+  }
+  .a-long-text.is-dialy > ul {
+    list-style-type: disc;
+  }
+  .a-long-text.is-dialy > ol {
+    list-style-type: decimal;
+  }
+  .a-long-text.is-dialy li > ul {
+    list-style-type: circle;
+  }
+  .a-long-text.is-dialy li > ul > li > ul {
+    list-style-type: square;
+  }
+  .a-long-text.is-dialy ul,
+.a-long-text.is-dialy ol {
+    list-style-position: outside;
+    margin-left: 1.75em;
+    font-size: 1.3333333333rem;
+    margin-top: 1.25rem;
+    line-height: 2.5rem;
+  }
+  .a-long-text.is-dialy li {
+    font-size: 1.3333333333rem;
+    margin-top: 0.75rem;
+    line-height: 2.5rem;
+  }
+  .a-long-text.is-dialy li:first-child {
+    margin-top: 0;
+  }
+  .a-long-text.is-dialy li input {
+    margin-right: 0.25rem;
+  }
+  .a-long-text.is-dialy li ul,
+.a-long-text.is-dialy li ol {
+    font-size: 1.3333333333rem;
+    margin-top: 0.25rem;
+    line-height: 2.5rem;
+  }
+  .a-long-text.is-dialy * ol {
+    list-style-type: decimal;
+  }
+  .a-long-text.is-dialy * > ul {
+    list-style-type: disc;
+  }
+  .a-long-text.is-dialy * > ol {
+    list-style-type: decimal;
+  }
+  .a-long-text.is-dialy * li > ul {
+    list-style-type: circle;
+  }
+  .a-long-text.is-dialy * li > ul > li > ul {
+    list-style-type: square;
+  }
+  .a-long-text.is-dialy table {
+    font-size: 1.1428571429rem;
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
+    line-height: 2rem;
+    width: 100%;
+  }
+  .a-long-text.is-dialy th,
+.a-long-text.is-dialy td {
+    border: solid 1px #e0e0e0;
+    padding: 0.75em 1em;
+  }
+  .a-long-text.is-dialy th {
+    background-color: #f2f2f4;
+    font-weight: 600;
+  }
+  .a-long-text.is-dialy tbody tr:nth-child(even) {
+    background-color: #f9f9fa;
+  }
+  .a-long-text.is-dialy blockquote {
+    font-size: 1.3333333333rem;
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
+    line-height: 2.5rem;
+    padding-left: 1.25em;
+    position: relative;
+    border-left: solid 0.25em #e0e0e0;
+  }
+  .a-long-text.is-dialy blockquote ol {
+    list-style-type: decimal;
+  }
+  .a-long-text.is-dialy blockquote > ul {
+    list-style-type: disc;
+  }
+  .a-long-text.is-dialy blockquote > ol {
+    list-style-type: decimal;
+  }
+  .a-long-text.is-dialy blockquote li > ul {
+    list-style-type: circle;
+  }
+  .a-long-text.is-dialy blockquote li > ul > li > ul {
+    list-style-type: square;
+  }
+  .a-long-text.is-dialy blockquote code {
+    font-style: normal;
+  }
+  .a-long-text.is-dialy details {
+    font-size: 1.3333333333rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+    border: solid 1px #e0e0e0;
+    border-radius: 0.25rem;
+    padding: 0.5em 1em;
+    transition: all 0.2s ease-out;
+  }
+  .a-long-text.is-dialy details summary {
+    font-size: 1em;
+    line-height: 1.5;
+    cursor: pointer;
+    outline: none;
+  }
+  .a-long-text.is-dialy details:hover {
+    box-shadow: 0 0 0 100em rgba(73, 55, 191, 0.05) inset, 0 0 0 0.1875rem rgba(73, 55, 191, 0.25);
+    border-color: #4937bf;
+  }
+  .a-long-text.is-dialy details[open] summary {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    border-bottom: solid 1px #e0e0e0;
+    padding-bottom: 0.5em;
+  }
+  .a-long-text.is-dialy details[open]:hover {
+    box-shadow: none;
+    border-color: #e0e0e0;
+  }
+  .a-long-text.is-dialy details[open] summary + *:first-child {
+    margin-top: 0 !important;
+  }
+  .a-long-text.is-dialy iframe {
+    display: block;
+    max-width: 100%;
+    font-size: 1.3333333333rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    line-height: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 47.98em) {
+  .a-long-text.is-dialy > *:first-child {
+    margin-top: 0;
+  }
+  .a-long-text.is-dialy > *:last-child {
+    margin-bottom: 0;
+  }
+  .a-long-text.is-dialy div {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.75rem;
+  }
+  .a-long-text.is-dialy h1 {
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+  }
+  .a-long-text.is-dialy h2 {
+    font-size: 1.3333333333rem;
+    margin-top: 1.75rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+    padding-bottom: calc(0.75rem - 1px);
+    border-bottom: solid 1px #e0e0e0;
+  }
+  .a-long-text.is-dialy h3 {
+    font-size: 1.1428571429rem;
+    margin-top: 1.5rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+  }
+  .a-long-text.is-dialy h4 {
+    font-size: 1rem;
+    margin-top: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+  }
+  .a-long-text.is-dialy h5 {
+    font-size: 1rem;
+    margin-top: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+  }
+  .a-long-text.is-dialy h6 {
+    font-size: 1rem;
+    margin-top: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+  }
+  .a-long-text.is-dialy p {
+    font-size: 1rem;
+    margin-top: 1.25rem;
+    line-height: 2rem;
+  }
+  .a-long-text.is-dialy a {
+    word-break: break-all;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.2s ease-out;
+  }
+  .a-long-text.is-dialy a:hover, .a-long-text.is-dialy a:active {
+    text-decoration: none;
+  }
+  .a-long-text.is-dialy a:hover {
+    color: #ff00a5;
+  }
+  .a-long-text.is-dialy code {
+    tab-size: 2;
+    hyphens: none;
+  }
+  .a-long-text.is-dialy p code,
+.a-long-text.is-dialy li code {
+    font-size: 0.8888888889rem;
+    line-height: 1rem;
+    color: #2d2e48;
+    align-items: center;
+    letter-spacing: 0;
+    padding: 0.25em 0.25em;
+    border: solid 1px #e0e0e0;
+    background-color: #eaeaed;
+    margin-left: 0.125em;
+    margin-right: 0.125em;
+    border-radius: 0.125rem;
+  }
+  .a-long-text.is-dialy pre code {
+    overflow: auto;
+    display: block;
+    width: 100%;
+    padding: 0.5em 0.75em;
+  }
+  .a-long-text.is-dialy pre {
+    border-radius: 4px;
+    padding: 0;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    line-height: 1.25rem;
+  }
+  .a-long-text.is-dialy hr {
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    line-height: 1rem;
+    display: block;
+    height: 0.5rem;
+    background-color: #e0e0e0;
+  }
+  .a-long-text.is-dialy img {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1rem;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid transparent;
+  }
+  a:hover .a-long-text.is-dialy img {
+    border-color: #b3b3b3;
+  }
+  .a-long-text.is-dialy ol {
+    list-style-type: decimal;
+  }
+  .a-long-text.is-dialy > ul {
+    list-style-type: disc;
+  }
+  .a-long-text.is-dialy > ol {
+    list-style-type: decimal;
+  }
+  .a-long-text.is-dialy li > ul {
+    list-style-type: circle;
+  }
+  .a-long-text.is-dialy li > ul > li > ul {
+    list-style-type: square;
+  }
+  .a-long-text.is-dialy ul,
+.a-long-text.is-dialy ol {
+    list-style-position: outside;
+    margin-left: 1.75em;
+    font-size: 1rem;
+    margin-top: 1rem;
+    line-height: 2rem;
+  }
+  .a-long-text.is-dialy li {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    line-height: 2rem;
+  }
+  .a-long-text.is-dialy li:first-child {
+    margin-top: 0;
+  }
+  .a-long-text.is-dialy li input {
+    margin-right: 0.25rem;
+  }
+  .a-long-text.is-dialy li ul,
+.a-long-text.is-dialy li ol {
+    font-size: 1rem;
+    margin-top: 0.25rem;
+    line-height: 2rem;
+  }
+  .a-long-text.is-dialy * ol {
+    list-style-type: decimal;
+  }
+  .a-long-text.is-dialy * > ul {
+    list-style-type: disc;
+  }
+  .a-long-text.is-dialy * > ol {
+    list-style-type: decimal;
+  }
+  .a-long-text.is-dialy * li > ul {
+    list-style-type: circle;
+  }
+  .a-long-text.is-dialy * li > ul > li > ul {
+    list-style-type: square;
+  }
+  .a-long-text.is-dialy table {
+    font-size: 0.8888888889rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.5rem;
+    width: 100%;
+  }
+  .a-long-text.is-dialy th,
+.a-long-text.is-dialy td {
+    border: solid 1px #e0e0e0;
+    padding: 0.75em 1em;
+  }
+  .a-long-text.is-dialy th {
+    background-color: #f2f2f4;
+    font-weight: 600;
+  }
+  .a-long-text.is-dialy tbody tr:nth-child(even) {
+    background-color: #f9f9fa;
+  }
+  .a-long-text.is-dialy blockquote {
+    font-size: 1rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    line-height: 2rem;
+    padding-left: 1.25em;
+    position: relative;
+    border-left: solid 0.25em #e0e0e0;
+  }
+  .a-long-text.is-dialy blockquote ol {
+    list-style-type: decimal;
+  }
+  .a-long-text.is-dialy blockquote > ul {
+    list-style-type: disc;
+  }
+  .a-long-text.is-dialy blockquote > ol {
+    list-style-type: decimal;
+  }
+  .a-long-text.is-dialy blockquote li > ul {
+    list-style-type: circle;
+  }
+  .a-long-text.is-dialy blockquote li > ul > li > ul {
+    list-style-type: square;
+  }
+  .a-long-text.is-dialy blockquote code {
+    font-style: normal;
+  }
+  .a-long-text.is-dialy details {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+    border: solid 1px #e0e0e0;
+    border-radius: 0.25rem;
+    padding: 0.5em 1em;
+    transition: all 0.2s ease-out;
+  }
+  .a-long-text.is-dialy details summary {
+    font-size: 1em;
+    line-height: 1.5;
+    cursor: pointer;
+    outline: none;
+  }
+  .a-long-text.is-dialy details:hover {
+    box-shadow: 0 0 0 100em rgba(73, 55, 191, 0.05) inset, 0 0 0 0.1875rem rgba(73, 55, 191, 0.25);
+    border-color: #4937bf;
+  }
+  .a-long-text.is-dialy details[open] summary {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    border-bottom: solid 1px #e0e0e0;
+    padding-bottom: 0.5em;
+  }
+  .a-long-text.is-dialy details[open]:hover {
+    box-shadow: none;
+    border-color: #e0e0e0;
+  }
+  .a-long-text.is-dialy details[open] summary + *:first-child {
+    margin-top: 0 !important;
+  }
+  .a-long-text.is-dialy iframe {
+    display: block;
+    max-width: 100%;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.75rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .a-short-text > *:first-child {
   margin-top: 0;
@@ -2054,8 +2594,8 @@ p .a-short-text.is-md a {
 }
 @media (min-width: 48em) {
   .a-page-title {
-    font-size: 4rem;
-    line-height: 5.5rem;
+    font-size: 2.6666666667rem;
+    line-height: 3.75rem;
   }
   .a-page-title:not(:first-child) {
     margin-top: 1rem;
@@ -4070,8 +4610,8 @@ p .a-short-text.is-md a {
 }
 @media (min-width: 48em) {
   .b-articles-article__published-date {
-    font-size: 1.3333333333rem;
-    line-height: 1.75rem;
+    font-size: 1.1428571429rem;
+    line-height: 1.5rem;
   }
 }
 @media (max-width: 47.98em) {
@@ -4087,8 +4627,8 @@ p .a-short-text.is-md a {
 }
 @media (min-width: 48em) {
   .b-articles-article__title {
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
   }
   .b-articles-article__title:not(:first-child) {
     margin-top: 0.25rem;
@@ -4113,8 +4653,8 @@ p .a-short-text.is-md a {
 }
 @media (min-width: 48em) {
   .b-article-header__published-date {
-    font-size: 2rem;
-    line-height: 3rem;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
     font-weight: 700;
   }
 }
