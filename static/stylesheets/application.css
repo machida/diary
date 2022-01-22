@@ -2625,6 +2625,10 @@ p .a-short-text.is-md a {
   flex: 1;
 }
 
+.a-border {
+  border-top: solid 2px #2d2e48;
+}
+
 .l-wrapper {
   min-height: 100vh;
 }
@@ -4493,8 +4497,8 @@ p .a-short-text.is-md a {
 
 @media (min-width: 48em) {
   .l-header {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
 @media (max-width: 47.98em) {
@@ -4506,8 +4510,8 @@ p .a-short-text.is-md a {
 
 @media (min-width: 48em) {
   .l-main {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
 @media (max-width: 47.98em) {
@@ -4554,7 +4558,7 @@ p .a-short-text.is-md a {
 
 @media (min-width: 48em) {
   .l-article__row:not(:first-child) {
-    margin-top: 2.5rem;
+    margin-top: 3.5rem;
   }
 }
 @media (max-width: 47.98em) {
@@ -4575,8 +4579,8 @@ p .a-short-text.is-md a {
 }
 @media (min-width: 48em) {
   .b-logo__type {
-    font-size: 2rem;
-    line-height: 2.75rem;
+    font-size: 2.6666666667rem;
+    line-height: 3.75rem;
   }
 }
 @media (max-width: 47.98em) {
@@ -4690,8 +4694,8 @@ p .a-short-text.is-md a {
 
 @media (min-width: 48em) {
   .b-article-tags {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.1428571429rem;
+    line-height: 1.75rem;
   }
 }
 @media (max-width: 47.98em) {
@@ -4753,8 +4757,8 @@ p .a-short-text.is-md a {
 }
 @media (min-width: 48em) {
   .b-article-pager__items {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.1428571429rem;
+    line-height: 1.75rem;
   }
 }
 @media (max-width: 47.98em) {
@@ -4791,7 +4795,7 @@ p .a-short-text.is-md a {
 }
 
 .b-article-hr {
-  border-top: solid 1px #e0e0e0;
+  border-top: solid 2px #2d2e48;
 }
 
 .b-terms__items {
