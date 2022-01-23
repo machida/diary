@@ -1,7 +1,11 @@
 @use "../config" as *
 
 .l-header
+  .a-border
+    +margin(vertical, vr(1, -1px))
+
+.l-header__inner
   +media-breakpoint-up(md)
-    +padding(vertical, vr(16))
+    +padding(vertical, vr(18))
   +media-breakpoint-down(sm)
     +padding(vertical, vr(8))
