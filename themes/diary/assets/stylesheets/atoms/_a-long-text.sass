@@ -3,23 +3,8 @@
 
 .a-long-text
   letter-spacing: .05em
-  &.is-lg
-    +media-breakpoint-up(md)
-      +long-text-style(lg)
-    +media-breakpoint-down(sm)
-      +long-text-style(md)
-  &.is-sm
-    +long-text-style(sm)
-  &.is-md
-    +media-breakpoint-up(md)
-      +long-text-style(md)
-    +media-breakpoint-down(sm)
-      +long-text-style(sm)
   &.is-dialy
     +media-breakpoint-up(md)
       +long-text-style(dialy)
     +media-breakpoint-down(sm)
       +long-text-style(dialy-sm)
-  table
-    pre
-      margin-top: 0 !important

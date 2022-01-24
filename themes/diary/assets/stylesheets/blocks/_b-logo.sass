@@ -2,6 +2,23 @@
 
 .b-logo__link
   text-decoration: none
+  position: relative
+  padding-left: 1em
+  +media-breakpoint-up(md)
+    +text-block(fz(8) 1.4)
+  +media-breakpoint-down(sm)
+    +text-block(fz(7) 1.4)
+  &::before
+    transition: all .2s ease-out
+    content: ''
+    +size(2.75em)
+    background-color: #ea9a7f
+    display: block
+    +position(absolute, left 0, top 50%)
+    transform: translate(0, -50%)
+    border-radius: 50%
+  &:hover::before
+    +size(2.5em)
 
 .b-logo__type
   color: $default-text
@@ -10,9 +27,6 @@
   transition: color .2s ease-out
   font-family: 'Bungee Shade', cursive
   letter-spacing: .125em
-  +media-breakpoint-up(md)
-    +text-block(fz(8) 1.4)
-  +media-breakpoint-down(sm)
-    +text-block(fz(6) 1.4)
+  +position(relative, 2)
   .b-logo__link:hover &
-    color: #ff00a5
+    color: #cd542b

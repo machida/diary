@@ -1,6 +1,6 @@
 @use "../config" as *
 
-.b-article-body .a-long-text.is-lg
+.b-article-body .a-long-text.is-dialy
   ////////////////
   //  Hugo
   ////////////////
@@ -20,3 +20,9 @@
   h5,
   h6
     font-family: YakuHanJP_Noto, "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif
+  h2
+    padding-left: .75em
+    +media-breakpoint-up(md)
+      border-left: solid .5rem #ea9a7f
+    +media-breakpoint-down(sm)
+      border-left: solid .25rem #ea9a7f
