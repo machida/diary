@@ -422,9 +422,6 @@ a {
   color: #08265c;
 }
 
-.a-long-text {
-  letter-spacing: 0.05em;
-}
 @media (min-width: 48em) {
   .a-long-text.is-dialy > *:first-child {
     margin-top: 0;
@@ -1179,7 +1176,7 @@ p .a-short-text.is-md a {
 }
 
 .a-page-title {
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: 0.0125em;
 }
 @media (min-width: 48em) {
@@ -1263,8 +1260,7 @@ p .a-short-text.is-md a {
 }
 
 .l-header .a-border {
-  margin-top: calc(0.25rem - -1px);
-  margin-bottom: calc(0.25rem - -1px);
+  margin-bottom: -2px;
 }
 
 @media (min-width: 48em) {
@@ -1293,16 +1289,20 @@ p .a-short-text.is-md a {
   }
 }
 
+.l-footer .a-border {
+  margin-bottom: -2px;
+}
+
 @media (min-width: 48em) {
-  .l-footer {
+  .l-footer__inner {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+@media (max-width: 47.98em) {
+  .l-footer__inner {
     padding-top: 3rem;
     padding-bottom: 3rem;
-  }
-}
-@media (max-width: 47.98em) {
-  .l-footer {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
   }
 }
 
@@ -1487,16 +1487,27 @@ p .a-short-text.is-md a {
   font-family: YakuHanJP_Noto, "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 .b-article-body .a-long-text.is-dialy h2 {
-  padding-left: 0.75em;
+  padding-left: 1em;
+  position: relative;
+}
+.b-article-body .a-long-text.is-dialy h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #d5d5cb;
 }
 @media (min-width: 48em) {
-  .b-article-body .a-long-text.is-dialy h2 {
-    border-left: solid 0.5rem #ea9a7f;
+  .b-article-body .a-long-text.is-dialy h2::before {
+    width: 0.5rem;
+    border-radius: 0.25rem;
   }
 }
 @media (max-width: 47.98em) {
-  .b-article-body .a-long-text.is-dialy h2 {
-    border-left: solid 0.25rem #ea9a7f;
+  .b-article-body .a-long-text.is-dialy h2::before {
+    width: 0.25rem;
+    border-radius: 0.125rem;
   }
 }
 
@@ -1603,8 +1614,8 @@ p .a-short-text.is-md a {
 }
 
 .b-article-hr {
-  border-top: solid 2px #08265c;
-  margin-top: calc(0.25rem - -2px);
+  border-top: dashed 1px #d5d5cb;
+  margin-top: calc(0.25rem - -3px);
 }
 
 .b-terms__items {

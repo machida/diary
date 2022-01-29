@@ -22,10 +22,6 @@
             </div><!-- .l-article__row -->
           {{ end }}
 
-          <div class="l-article__row">
-            <hr class="b-article-hr">
-          </div><!-- .l-article__row -->
-
           {{ if ne .Type "page" }}
             <div class="l-article__row">
               {{- partial "b-article-pager.html" . -}}

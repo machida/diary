@@ -21,8 +21,15 @@
   h6
     font-family: YakuHanJP_Noto, "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif
   h2
-    padding-left: .75em
-    +media-breakpoint-up(md)
-      border-left: solid .5rem #ea9a7f
-    +media-breakpoint-down(sm)
-      border-left: solid .25rem #ea9a7f
+    padding-left: 1em
+    position: relative
+    &::before
+      content: ''
+      +position(absolute, left 0, top 0, bottom 0)
+      background-color: $shade
+      +media-breakpoint-up(md)
+        width: .5rem
+        border-radius: .25rem
+      +media-breakpoint-down(sm)
+        width: .25rem
+        border-radius: .125rem

@@ -1,7 +1,11 @@
 @use "../config" as *
 
 .l-footer
+  .a-border
+    margin-bottom: -2px
+
+.l-footer__inner
   +media-breakpoint-up(md)
-    +padding(vertical, vr(12))
+    +padding(vertical, vr(20))
   +media-breakpoint-down(sm)
-    +padding(vertical, vr(8))
+    +padding(vertical, vr(12))
