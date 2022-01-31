@@ -438,7 +438,7 @@ a {
   .a-long-text.is-dialy h1 {
     font-size: 2rem;
     margin-top: 2rem;
-    line-height: 2.5rem;
+    line-height: 2.75rem;
     font-weight: 700;
   }
   .a-long-text.is-dialy h2 {
@@ -473,7 +473,7 @@ a {
   }
   .a-long-text.is-dialy p {
     font-size: 1.3333333333rem;
-    margin-top: 1.75rem;
+    margin-top: 2rem;
     line-height: 2.5rem;
   }
   .a-long-text.is-dialy a {
@@ -706,7 +706,7 @@ a {
   .a-long-text.is-dialy h1 {
     font-size: 1.6rem;
     margin-top: 1.5rem;
-    line-height: 2rem;
+    line-height: 2.25rem;
     font-weight: 700;
   }
   .a-long-text.is-dialy h2 {
@@ -741,7 +741,7 @@ a {
   }
   .a-long-text.is-dialy p {
     font-size: 1rem;
-    margin-top: 1.25rem;
+    margin-top: 1.5rem;
     line-height: 2rem;
   }
   .a-long-text.is-dialy a {
